@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Layout que contiene las fotos de perfil para las salas de chat-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp">
+
+    <!--Aqui va la imagen de perfil-->
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/vampire"
+        android:id="@+id/ImagenReducida"
+        android:background="@drawable/shape_foto_perfil_reducida"/>
+
+    <!--Decoracion para eliminar las esquinas-->
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/shape_foto_perfil_reducida"/>
+</RelativeLayout>

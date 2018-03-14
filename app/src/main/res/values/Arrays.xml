@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="CabMens">
+        <item>says</item>
+        <item>whispers</item>
+        <item>shouts</item>
+        <item>jokes</item>
+        <item>laughs</item>
+        <item>fears</item>
+        <item>flirts</item>
+    </array>
+</resources>

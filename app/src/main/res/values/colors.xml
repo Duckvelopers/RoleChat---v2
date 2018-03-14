@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Color naranja que define la app FF9100-->
+    <color name="colorPrimary">#FF9100</color>
+    <color name="colorLigero">#FFC246</color>
+    <color name="colorOscuro">#C56200</color>
+    <color name="primaryTextColor">#FFFFFF</color>
+
+
+    <!--Colores elegidos que me gustan-->
+    <color name="colorPrimaryDark">#EF6C00</color>
+    <color name="colorAccent">#FFEE58</color>
+
+</resources>

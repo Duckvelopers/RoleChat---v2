@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Layout con el perfil del usuario en la pantalla principal-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent">
+
+    <!--El relative contiene la imagen de perfil y una decoracion para eliminar las esquinas-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="2dp">
+        <ImageView
+            android:id="@+id/PerfilFoto"
+            android:layout_width="79dp"
+            android:layout_height="79dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/shape_foto_perfil"
+            android:src="@drawable/gandalf"/>
+        <ImageView
+            android:layout_width="79dp"
+            android:layout_height="79dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/shape_foto_perfil"/>
+    </RelativeLayout>
+
+    <!--Layout que contiene la informacion principal del usuario-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!--Nombre del usuario-->
+        <TextView
+            android:id="@+id/PerfilNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gangulf_el_best_chopa_killa_7"
+            android:textAppearance="@style/TextoNombrePerfil"/>
+
+        <!--Nivel del usuario-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lvl:"
+                android:textAppearance="@style/TextoNombrePerfil"/>
+            <TextView
+                android:id="@+id/PerfilLvl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="77"
+                android:textAppearance="@style/TextoNombrePerfil"
+                android:layout_marginLeft="2dp"/>
+        </LinearLayout>
+
+        <!--Experiencia actual del usuario-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="7dp"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_barra_exp">
+            <View
+                android:id="@+id/PerfilBarraExp"
+                android:layout_width="55dp"
+                android:layout_margin="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/com_facebook_blue"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

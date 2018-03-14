@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Recursos Basicos-->
+    <string name="app_name">RoleChat</string>
+    <string name="Opciones">Opciones</string>
+    <string name="Salir">Salir</string>
+    <string name="Ayuda">Ayuda</string>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Layout para cada chat-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rolechat.duckstructors.rolechat.SalaChat"
+    android:orientation="vertical">
+
+    <!--Barra del perfil personaje del chat-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--Foto del personaje actual-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="ElegirPersonaje"
+                android:layout_margin="5dp">
+                <ImageView
+                    android:id="@+id/ChatImagenPerfil"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/shape_foto_perfil"/>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/shape_foto_perfil"/>
+            </RelativeLayout>
+
+            <!--Nombre del personaje actual-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="horizontal"
+                android:gravity="bottom">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre del personaje"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+
+            <!--Boton susurrar-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ico_susurro"
+                    android:background="@drawable/shape_susurro"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--View que contendrá los mensajes-->
+    <ListView
+        android:id="@+id/ChatListaMensajes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:stackFromBottom="true"
+        android:divider="@android:color/transparent"
+        android:transcriptMode="alwaysScroll"
+        tools:listitem="@layout/layout_mensaje">
+    </ListView>
+
+    <!--Barra para escribir-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <!--Aqui va el texto-->
+        <EditText
+            android:id="@+id/ChatEditorMensaje"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bodyTextColor"
+            android:textColorHint="@color/colorPrimary"/>
+
+        <!--Boton para enviar el texto-->
+        <ImageButton
+            android:id="@+id/ChatBotonEnviar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:src="@drawable/ico_send"
+            android:onClick="EnviarMensaje"/>
+    </LinearLayout>
+</LinearLayout>

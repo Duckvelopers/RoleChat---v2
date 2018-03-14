@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="CabMens">
+        <item>dice</item>
+        <item>susurra</item>
+        <item>grita</item>
+        <item>bromea</item>
+        <item>rie</item>
+        <item>teme</item>
+        <item>flirtea</item>
+    </array>
+</resources>

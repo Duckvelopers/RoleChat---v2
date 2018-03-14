@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "869441350151",
+    "firebase_url": "https://rolechat-8352d.firebaseio.com",
+    "project_id": "rolechat-8352d",
+    "storage_bucket": "rolechat-8352d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869441350151:android:9c81aeff55cee1ca",
+        "android_client_info": {
+          "package_name": "com.rolechat.duckstructors.rolechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869441350151-iji9nusnc7gae2j1ij9vj822kcdmqccq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3ILyQafgpIXDBGItUMQ9W-LZxvhmB_EQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Componente de la barra de opciones principal de la aplicacion-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--Sin funcionalidad boton con ayudas de uso-->
+    <item android:title="@string/Ayuda" app:showAsAction="never"/>
+    <!--Sin funcionalidad boton con opciones de sonido, temas etc-->
+    <item android:title="@string/Opciones" app:showAsAction="never"/>
+    <!--Sin funcionalidad aun boton para salir del perfil-->
+    <item android:title="@string/Salir" app:showAsAction="never"/>
+</menu>
