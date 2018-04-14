@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     Toolbar PPBarraOpciones;
     LinearLayout listaPantallaPrincipal;
     LayoutInflater inflador;
+    HiloReceptor hilo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
             LinearLayout lista = (LinearLayout) findViewById(R.id.PPListaSalas);
             lista.addView(sala,0);
         }
+        hilo=new HiloReceptor();
+        hilo.run();
     }
 
     @Override

@@ -1,18 +1,22 @@
 package com.rolechat.duckstructors.rolechat;
 
+import android.app.Application;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import java.io.IOException;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
@@ -33,10 +37,6 @@ public class SalaChat extends AppCompatActivity {
 
     //Tamaño maximo de los mensajes
     private int TAM_MAX_MEN = 2000;
-
-    //Conexion
-    private Socket soc;
-    private int PUERTO
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
